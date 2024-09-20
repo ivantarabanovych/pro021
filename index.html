@@ -4,34 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Розрахунок суми збережень на місяць</h1>
+    <h1>Click button</h1>
+
+    <button onclick="showMessage()">Click me!</button>
+
     <script>
-        function calculateSavings(salary, expenses){
-            return salary - expenses;
+        function showMessage(){
+            alert('You click on button!')
         }
-
-        console.log(this);
-
-        var userName = "Ivan";
-        var userAge = 21;
-        var monthlyIncome = 35000;
-        var monthlyExpenses = 10000;
-
-        console.log(window.userName);
-        console.log(window.userAge);
-        console.log(window.monthlyIncome);
-        console.log(window.monthlyExpenses);
-        
-        console.log("збереження на місяць: ", calculateSavings(monthlyIncome, monthlyExpenses)); 
-
-        console.log("URL: ", window.location.href);
-        console.log("Width of screen: ", window.innerWidth);
-        console.log("time dowload page:", window.performance.timing.loadEventEnd - window.performance.timing.loadEventStart);
-        console.log("Hostname: ", window.location.hostname);
-        
-        
     </script>
     <script src="./main.js"></script>
 </body>
