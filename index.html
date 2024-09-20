@@ -11,6 +11,27 @@
         function calculateSavings(salary, expenses){
             return salary - expenses;
         }
+
+        console.log(this);
+
+        var userName = "Ivan";
+        var userAge = 21;
+        var monthlyIncome = 35000;
+        var monthlyExpenses = 10000;
+
+        console.log(window.userName);
+        console.log(window.userAge);
+        console.log(window.monthlyIncome);
+        console.log(window.monthlyExpenses);
+        
+        console.log("збереження на місяць: ", calculateSavings(monthlyIncome, monthlyExpenses)); 
+
+        console.log("URL: ", window.location.href);
+        console.log("Width of screen: ", window.innerWidth);
+        console.log("time dowload page:", window.performance.timing.loadEventEnd - window.performance.timing.loadEventStart);
+        console.log("Hostname: ", window.location.hostname);
+        
+        
     </script>
     <script src="./main.js"></script>
 </body>
